@@ -176,27 +176,29 @@ body {
 h1 {
   font-family: "cabazon", helvetica, sans-serif;
   font-size: 6em;
-  line-height: 1em; }
+  line-height: 1em;
+  -webkit-text-stroke: 1px rgba(255, 0, 0, 0.2);
+  color: transparent; }
 
-/* line 167, sources/mobile.scss */
+/* line 170, sources/mobile.scss */
 a:hover,
 a:active {
   text-decoration: none; }
 
-/* line 171, sources/mobile.scss */
+/* line 174, sources/mobile.scss */
 #background {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
-/* line 177, sources/mobile.scss */
+/* line 180, sources/mobile.scss */
 #backgroundCanvas {
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: #0f0; }
 
-/* line 187, sources/mobile.scss */
+/* line 190, sources/mobile.scss */
 #message1,
 #message2,
 #message3,
@@ -210,26 +212,26 @@ a:active {
   padding: 20px;
   overflow: scroll; }
 
-/* line 198, sources/mobile.scss */
+/* line 201, sources/mobile.scss */
 #message1 {
   background: white;
   color: #e42321; }
 
-/* line 203, sources/mobile.scss */
+/* line 206, sources/mobile.scss */
 #message2 {
   background: white;
   color: #e42321; }
 
-/* line 208, sources/mobile.scss */
+/* line 211, sources/mobile.scss */
 #message3 {
   background: white;
   color: #e42321; }
 
-/* line 213, sources/mobile.scss */
+/* line 216, sources/mobile.scss */
 #message4 {
   background: white;
   color: #e42321; }
 
-/* line 218, sources/mobile.scss */
+/* line 221, sources/mobile.scss */
 .hidden {
   display: none; }
