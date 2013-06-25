@@ -36,6 +36,14 @@ $desktop          : 1025px;
 // http://caniuse.com/#search=rem
 
 
+// COLORS
+$blue : #009bdb;
+$yellow : #f7e822;
+$red : #e42321;
+$white : #fff;
+$black : #000;
+
+
 //
 // GENERAL ---------------------------------------------------------------------------
 //
@@ -44,7 +52,7 @@ $desktop          : 1025px;
 //
 
 html {
-
+	background: $blue;
 }
 
 a:hover, 

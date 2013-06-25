@@ -1,1 +1,9 @@
-@charset "utf-8";a:hover,a:active{text-decoration:none}
+@charset "utf-8";
+/* line 54, sources/desktop.scss */
+html {
+  background: #009bdb; }
+
+/* line 59, sources/desktop.scss */
+a:hover,
+a:active {
+  text-decoration: none; }
