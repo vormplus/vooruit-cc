@@ -198,7 +198,8 @@ a:active {
   overflow: hidden;
   background: #0f0; }
 
-/* line 190, sources/mobile.scss */
+/* line 191, sources/mobile.scss */
+#hiddenMessage,
 #message1,
 #message2,
 #message3,
@@ -208,30 +209,41 @@ a:active {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 5;
+  z-index: 10;
   padding: 20px;
   overflow: scroll; }
 
-/* line 201, sources/mobile.scss */
+/* line 202, sources/mobile.scss */
+#hiddenMessage {
+  z-index: 5;
+  background: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  color: transparent;
+  text-align: center;
+  font-size: 10em;
+  line-height: 1em;
+  font-family: "cabazon", helvetica, sans-serif; }
+
+/* line 213, sources/mobile.scss */
 #message1 {
   background: white;
   color: #e42321; }
 
-/* line 206, sources/mobile.scss */
+/* line 218, sources/mobile.scss */
 #message2 {
   background: white;
   color: #e42321; }
 
-/* line 211, sources/mobile.scss */
+/* line 223, sources/mobile.scss */
 #message3 {
   background: white;
   color: #e42321; }
 
-/* line 216, sources/mobile.scss */
+/* line 228, sources/mobile.scss */
 #message4 {
   background: white;
   color: #e42321; }
 
-/* line 221, sources/mobile.scss */
+/* line 233, sources/mobile.scss */
 .hidden {
   display: none; }

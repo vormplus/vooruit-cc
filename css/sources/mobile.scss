@@ -184,6 +184,7 @@ a:active {
 	background: #0f0;
 }
 
+#hiddenMessage,
 #message1,
 #message2,
 #message3,
@@ -193,9 +194,20 @@ a:active {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 5;
+	z-index: 10;
 	padding: 20px;
 	overflow: scroll;
+}
+
+#hiddenMessage {
+	z-index: 5;
+	background: transparent;
+	-webkit-text-stroke: 1px rgba( 255, 255, 255, 0.5 );
+	color: transparent;
+	text-align: center;
+	font-size: 10em;
+	line-height: 1em;
+	font-family: "cabazon", helvetica, sans-serif;
 }
 
 #message1 {
