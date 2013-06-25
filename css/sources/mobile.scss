@@ -19,6 +19,7 @@
 @import "__embedded-content";
 @import "__css3-animations";
 
+@import "__variables.scss";
 
 // MEDIA QUERIES
 // Default: mobile-portrait
@@ -148,54 +149,74 @@ $mobile-landscape : 480px;
 // Add/override them in css/desktop.css instead
 //
 
-html {
-
-}
-
 body {
-	font-family: Helvetica, Arial, Verdana, sans-serif;	
+	background: $blue;
+	font-family: "runda", helvetica, sans-serif;
 	font-size: 16px;
-
-	// if the viewport meta tag is not included: use min-width for correct 
-	// scaling on orientationchange (IOS default page-width: 980px)
-	min-width: 980px;
+	line-height: 1.4em;
+	color: $black;
 }
 
 h1 {
-	font-size: 2.2em;
-	line-height: 1.5em;
+	font-family: "cabazon", helvetica, sans-serif;
+	font-size: 6em;
+	line-height: 1em;
 }
 
-h2 {
-	font-size: 1.8em;
-	line-height: 1.5em;
+a:hover, 
+a:active {
+	text-decoration: none;	
 }
 
-h3 {
-	font-size: 1.4em;
-	line-height: 1.5em;
+#background {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
-p {
-	font-size: 1em;
-	line-height: 1.5em;
+#backgroundCanvas {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #0f0;
 }
 
-a {
-	text-decoration: underline;
+#message1,
+#message2,
+#message3,
+#message4 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 5;
+	padding: 20px;
+	overflow: hidden;
 }
 
-hr {
-	height: 1px;
-	margin: 1.5em 0;
-	padding: 0;
-	border: 0;
-	border-top: 1px solid #CCC;
-	display: block;
+#message1 {
+	background: $white;
+	color: $red;	
 }
 
-.smaller {
-	font-size: 70%;
+#message2 {
+	background: $white;
+	color: $red;	
+}
+
+#message3 {
+	background: $white;
+	color: $red;	
+}
+
+#message4 {
+	background: $white;
+	color: $red;	
+}
+
+.hidden {
+	display: none;
 }
 
 

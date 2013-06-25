@@ -11,6 +11,7 @@
 
 @import "__retina-support";
 
+@import "__variables.scss";
 
 // MEDIA QUERIES
 // Default: mobile-portrait (override/add some desktop specific styles)
@@ -35,15 +36,6 @@ $desktop          : 1025px;
 // http://drublic.de/blog/rem-fallback-sass-less
 // http://caniuse.com/#search=rem
 
-
-// COLORS
-$blue : #009bdb;
-$yellow : #f7e822;
-$red : #e42321;
-$white : #fff;
-$black : #000;
-
-
 //
 // GENERAL ---------------------------------------------------------------------------
 //
@@ -52,13 +44,9 @@ $black : #000;
 //
 
 html {
-	background: $blue;
+
 }
 
-a:hover, 
-a:active {
-	text-decoration: none;	
-}
 
 
 // Add .no-touch class to the HTML tag if touchEvents are not supported
