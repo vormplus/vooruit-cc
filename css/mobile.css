@@ -208,7 +208,7 @@ a:active {
   right: 0;
   z-index: 5;
   padding: 20px;
-  overflow: hidden; }
+  overflow: scroll; }
 
 /* line 198, sources/mobile.scss */
 #message1 {
