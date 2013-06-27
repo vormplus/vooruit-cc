@@ -159,11 +159,20 @@ body {
 
 h1 {
 	font-family: "cabazon", helvetica, sans-serif;
-	font-size: 6em;
+	font-size: 10em;
 	line-height: 1em;
-	-webkit-text-stroke: 1px rgba( 255, 0, 0, 0.2);
-	color: transparent;
+	color: rgba( 255, 255, 255, 0.2 );
+}
 
+h2 {
+	font-family: "cabazon", helvetica, sans-serif;
+	font-size: 4em;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+
+p {
+	margin-bottom: 1.4em;
 }
 
 a:hover, 
@@ -194,50 +203,101 @@ a:active {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 10;
-	padding: 20px;
-	overflow: scroll;
+	z-index: 20;
+}
+
+.textBox {
+	margin: 60px;
 }
 
 #hiddenMessage {
 	z-index: 5;
 	background: transparent;
-	-webkit-text-stroke: 1px rgba( 255, 255, 255, 0.5 );
-	color: transparent;
 	text-align: center;
-	font-size: 10em;
-	line-height: 1em;
-	font-family: "cabazon", helvetica, sans-serif;
+	overflow: hidden;
 }
 
 #message1 {
 	background: $white;
-	color: $red;	
+	color: $red;
 }
 
 #message2 {
-	background: $white;
-	color: $red;	
+	background: $yellow;
+	color: $blue;	
 }
 
 #message3 {
-	background: $white;
-	color: $red;	
+	background: $blue;
+	color: $black;	
 }
 
 #message4 {
-	background: $white;
-	color: $red;	
+	background: $red;
+	color: $white;	
 }
 
 .hidden {
 	display: none;
 }
 
+#close1,
+#close2,
+#close3,
+#close4 {
+	width: 60px;
+	height: 60px;
+	float: right;
+	margin: 60px;
+	text-indent: -9999px;
+}
 
+#message1 #close1 {
+	border: 2px solid $red;
+}
 
+#message2 #close2 {
+	border: 2px solid $blue;
+}
 
+#message3 #close3 {
+	border: 2px solid $black;
+}
 
+#message4 #close4 {
+	border: 2px solid $white;
+}
+
+#corner1,
+#corner2,
+#corner3,
+#corner4 {
+	position: absolute;
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+	background: #000;
+}
+
+#corner1 {
+	top: 0;
+	left: 0;
+}
+
+#corner2 {
+	top: 0;
+	right: 0;
+}
+
+#corner3 {
+	bottom: 0;
+	left: 0;
+}
+
+#corner4 {
+	bottom: 0;
+	right: 0;
+}
 
 
 

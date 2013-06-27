@@ -175,30 +175,40 @@ body {
 /* line 160, sources/mobile.scss */
 h1 {
   font-family: "cabazon", helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 10em;
   line-height: 1em;
-  -webkit-text-stroke: 1px rgba(255, 0, 0, 0.2);
-  color: transparent; }
+  color: rgba(255, 255, 255, 0.2); }
 
-/* line 170, sources/mobile.scss */
+/* line 167, sources/mobile.scss */
+h2 {
+  font-family: "cabazon", helvetica, sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  margin-bottom: 0.5em; }
+
+/* line 174, sources/mobile.scss */
+p {
+  margin-bottom: 1.4em; }
+
+/* line 179, sources/mobile.scss */
 a:hover,
 a:active {
   text-decoration: none; }
 
-/* line 174, sources/mobile.scss */
+/* line 183, sources/mobile.scss */
 #background {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
-/* line 180, sources/mobile.scss */
+/* line 189, sources/mobile.scss */
 #backgroundCanvas {
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: #0f0; }
 
-/* line 191, sources/mobile.scss */
+/* line 200, sources/mobile.scss */
 #hiddenMessage,
 #message1,
 #message2,
@@ -209,41 +219,97 @@ a:active {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 10;
-  padding: 20px;
-  overflow: scroll; }
+  z-index: 20; }
 
-/* line 202, sources/mobile.scss */
+/* line 209, sources/mobile.scss */
+.textBox {
+  margin: 60px; }
+
+/* line 213, sources/mobile.scss */
 #hiddenMessage {
   z-index: 5;
   background: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
-  color: transparent;
   text-align: center;
-  font-size: 10em;
-  line-height: 1em;
-  font-family: "cabazon", helvetica, sans-serif; }
+  overflow: hidden; }
 
-/* line 213, sources/mobile.scss */
+/* line 220, sources/mobile.scss */
 #message1 {
   background: white;
   color: #e42321; }
 
-/* line 218, sources/mobile.scss */
+/* line 225, sources/mobile.scss */
 #message2 {
-  background: white;
-  color: #e42321; }
+  background: #f7e822;
+  color: #009bdb; }
 
-/* line 223, sources/mobile.scss */
+/* line 230, sources/mobile.scss */
 #message3 {
-  background: white;
-  color: #e42321; }
+  background: #009bdb;
+  color: black; }
 
-/* line 228, sources/mobile.scss */
+/* line 235, sources/mobile.scss */
 #message4 {
-  background: white;
-  color: #e42321; }
+  background: #e42321;
+  color: white; }
 
-/* line 233, sources/mobile.scss */
+/* line 240, sources/mobile.scss */
 .hidden {
   display: none; }
+
+/* line 247, sources/mobile.scss */
+#close1,
+#close2,
+#close3,
+#close4 {
+  width: 60px;
+  height: 60px;
+  float: right;
+  margin: 60px;
+  text-indent: -9999px; }
+
+/* line 255, sources/mobile.scss */
+#message1 #close1 {
+  border: 2px solid #e42321; }
+
+/* line 259, sources/mobile.scss */
+#message2 #close2 {
+  border: 2px solid #009bdb; }
+
+/* line 263, sources/mobile.scss */
+#message3 #close3 {
+  border: 2px solid black; }
+
+/* line 267, sources/mobile.scss */
+#message4 #close4 {
+  border: 2px solid white; }
+
+/* line 274, sources/mobile.scss */
+#corner1,
+#corner2,
+#corner3,
+#corner4 {
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background: #000; }
+
+/* line 282, sources/mobile.scss */
+#corner1 {
+  top: 0;
+  left: 0; }
+
+/* line 287, sources/mobile.scss */
+#corner2 {
+  top: 0;
+  right: 0; }
+
+/* line 292, sources/mobile.scss */
+#corner3 {
+  bottom: 0;
+  left: 0; }
+
+/* line 297, sources/mobile.scss */
+#corner4 {
+  bottom: 0;
+  right: 0; }

@@ -1,1 +1,13 @@
 @charset "utf-8";
+/* line 50, sources/desktop.scss */
+h1 {
+  font-family: "cabazon", helvetica, sans-serif;
+  font-size: 10em;
+  line-height: 1em;
+  color: rgba(255, 255, 255, 0.2); }
+
+/* line 57, sources/desktop.scss */
+h2 {
+  font-family: "cabazon", helvetica, sans-serif;
+  font-size: 6em;
+  line-height: 1em; }

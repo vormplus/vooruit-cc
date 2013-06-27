@@ -41,11 +41,37 @@ define([
     if(!Utils.client.isTouch) document.documentElement.className = 'no-touch';
 
 
+    $("#corner1").click( function() {
+        $("#message1").show();
+    });
 
+    $("#corner2").click( function() {
+        $("#message2").show();
+    });
 
+    $("#corner3").click( function() {
+        $("#message3").show();
+    });
 
+    $("#corner4").click( function() {
+        $("#message4").show();
+    });
 
+    $("#close1").click( function() {
+        $("#message1").hide();
+    });
 
+    $("#close2").click( function() {
+        $("#message2").hide();
+    });
+
+    $("#close3").click( function() {
+        $("#message3").hide();
+    });
+
+    $("#close4").click( function() {
+        $("#message4").hide();
+    });
 
 
 

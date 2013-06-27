@@ -47,7 +47,18 @@ html {
 
 }
 
+h1 {
+	font-family: "cabazon", helvetica, sans-serif;
+	font-size: 10em;
+	line-height: 1em;
+	color: rgba( 255, 255, 255, 0.2 );
+}
 
+h2 {
+	font-family: "cabazon", helvetica, sans-serif;
+	font-size: 6em;
+	line-height: 1em;
+}
 
 // Add .no-touch class to the HTML tag if touchEvents are not supported
 // This way we can disable :hover states on touch-devices
