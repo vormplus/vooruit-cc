@@ -263,29 +263,34 @@ a:active {
 #close2,
 #close3,
 #close4 {
+  float: right;
   width: 60px;
   height: 60px;
-  float: right;
   margin: 60px;
+  display: block;
   text-indent: -9999px; }
 
-/* line 257, sources/mobile.scss */
+/* line 258, sources/mobile.scss */
 #message1 #close1 {
-  border: 2px solid #e42321; }
+  background: transparent url("../images/close-red.png") no-repeat;
+  color: #e42321; }
 
-/* line 261, sources/mobile.scss */
+/* line 263, sources/mobile.scss */
 #message2 #close2 {
-  border: 2px solid #009bdb; }
+  background: transparent url("../images/close-blue.png") no-repeat;
+  color: #009bdb; }
 
-/* line 265, sources/mobile.scss */
+/* line 268, sources/mobile.scss */
 #message3 #close3 {
-  border: 2px solid black; }
+  background: transparent url("../images/close-black.png") no-repeat;
+  color: black; }
 
-/* line 269, sources/mobile.scss */
+/* line 273, sources/mobile.scss */
 #message4 #close4 {
-  border: 2px solid white; }
+  background: transparent url("../images/close-white.png") no-repeat;
+  color: white; }
 
-/* line 276, sources/mobile.scss */
+/* line 281, sources/mobile.scss */
 #corner1,
 #corner2,
 #corner3,
@@ -293,25 +298,28 @@ a:active {
   position: absolute;
   z-index: 10;
   width: 60px;
-  height: 60px;
-  background: #000; }
+  height: 60px; }
 
-/* line 284, sources/mobile.scss */
+/* line 288, sources/mobile.scss */
 #corner1 {
   top: 0;
-  left: 0; }
-
-/* line 289, sources/mobile.scss */
-#corner2 {
-  top: 0;
-  right: 0; }
+  left: 0;
+  background: transparent url("../images/circle.png") no-repeat; }
 
 /* line 294, sources/mobile.scss */
+#corner2 {
+  top: 0;
+  right: 0;
+  background: transparent url("../images/square.png") no-repeat; }
+
+/* line 300, sources/mobile.scss */
 #corner3 {
   bottom: 0;
-  left: 0; }
+  left: 0;
+  background: transparent url("../images/triangle.png") no-repeat; }
 
-/* line 299, sources/mobile.scss */
+/* line 306, sources/mobile.scss */
 #corner4 {
   bottom: 0;
-  right: 0; }
+  right: 0;
+  background: transparent url("../images/questionmark.png") no-repeat; }

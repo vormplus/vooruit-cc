@@ -247,27 +247,32 @@ a:active {
 #close2,
 #close3,
 #close4 {
+	float: right;
 	width: 60px;
 	height: 60px;
-	float: right;
 	margin: 60px;
+	display: block;
 	text-indent: -9999px;
 }
 
 #message1 #close1 {
-	border: 2px solid $red;
+	background: transparent url("../images/close-red.png") no-repeat;
+	color: $red;
 }
 
 #message2 #close2 {
-	border: 2px solid $blue;
+	background: transparent url("../images/close-blue.png") no-repeat;
+	color: $blue;
 }
 
 #message3 #close3 {
-	border: 2px solid $black;
+	background: transparent url("../images/close-black.png") no-repeat;
+	color: $black;
 }
 
 #message4 #close4 {
-	border: 2px solid $white;
+	background: transparent url("../images/close-white.png") no-repeat;
+	color: $white;
 }
 
 #corner1,
@@ -278,27 +283,30 @@ a:active {
 	z-index: 10;
 	width: 60px;
 	height: 60px;
-	background: #000;
 }
 
 #corner1 {
 	top: 0;
 	left: 0;
+	background: transparent url("../images/circle.png") no-repeat;
 }
 
 #corner2 {
 	top: 0;
 	right: 0;
+	background: transparent url("../images/square.png") no-repeat;
 }
 
 #corner3 {
 	bottom: 0;
 	left: 0;
+	background: transparent url("../images/triangle.png") no-repeat;
 }
 
 #corner4 {
 	bottom: 0;
 	right: 0;
+	background: transparent url("../images/questionmark.png") no-repeat;
 }
 
 
