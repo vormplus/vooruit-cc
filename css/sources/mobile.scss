@@ -219,14 +219,26 @@ a:active {
 	color: $red;
 }
 
+#message1 a {
+	color: $red;
+}
+
 #message2 {
 	background: $yellow;
 	color: $blue;	
 }
 
+#message2 a {
+	color: $blue;
+}
+
 #message3 {
 	background: $blue;
 	color: $black;	
+}
+
+#message3 a {
+	color: $black;
 }
 
 #message4 {
