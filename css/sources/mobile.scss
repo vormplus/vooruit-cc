@@ -136,12 +136,6 @@ $mobile-landscape : 480px;
 }
 
 
-
-
-
-
-
-
 //
 // GENERAL ---------------------------------------------------------------------------
 //
@@ -150,7 +144,7 @@ $mobile-landscape : 480px;
 //
 
 body {
-	background: $blue;
+	background: $white;
 	font-family: "runda", helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.4em;
@@ -162,7 +156,7 @@ h1 {
 	font-size: 10em;
 	line-height: 1em;
 	font-weight: normal;
-	color: rgba( 255, 255, 255, 0.2 );
+	color: rgba( 255, 255, 255, 0.4 );
 }
 
 h2 {
@@ -188,7 +182,7 @@ a:active {
 	overflow: hidden;
 }
 
-#backgroundCanvas {
+#background .sketch {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -217,6 +211,7 @@ a:active {
 	background: transparent;
 	text-align: center;
 	overflow: hidden;
+	pointer-events: none;
 }
 
 #message1 {
