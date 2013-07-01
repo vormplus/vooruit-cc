@@ -1,112 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <!--
-    DNS Prefetching resolves & caches domain names
-    This results in faster download initialization
-    https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md
-    http://daker.me/2013/05/5-html5-features-you-need-to-know.html
-    -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <title>Vooruit 100 | Creative Coding Playground</title>
 
+    <meta name="description" content="Zet een bende creative coders bij elkaar en je krijgt een explosie van pixels en code. Na drie dagen actieve dagen kan het afgewerkte werk blijven staan in de expo Vooruit 100." />
 
-    <!-- SEO /////////////////////////////////////////////////////////////////////// -->
-
-    <title>Creative Coding @ Vooruit</title>
-
-    <meta name="description" content="{{__PAGE_DESCRIPTION__}}" />
-    <meta name="keywords" content="{{__PAGE_KEYWORDS__}}" />
-
-    <!-- 
-    Add canonical url when dealing with duplicate content
-    Signal to search engines to Use this URL for this page
-    http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=139394&topic=2371375&ctx=topic
-    http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=139066&topic=2371375&ctx=topic
-    -->
-
-    <link rel="canonical" href="{{__PATH_TO_SOURCEPAGE_OF_DUPLICATE_CONTENT__}}" />
-
-    <!-- 
-    Enforce spiders to use the page description in searchresults
-    Don't show a Google Translation popup toolbar
-    http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
-    -->
+    <link rel="canonical" href="/" />
 
     <meta name="robots" content="noodp, noydir" />
     <meta name="google" content="notranslate" />
 
-
-    <!-- MOBILE //////////////////////////////////////////////////////////////////// -->
-
-    <!-- 
-    Set viewport for IOS
-    Display phone numbers as hyperlinks (IOS default: yes)
-    http://www.html-5.com/metatags/index.html#format-detection-meta-tag
-    -->
-
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
 
-    <!--
-    Enable the page to run chromeless from the homescreen
-    http://www.html-5.com/metatags/index.html#apple-mobile-web-app-capable
-    -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="{{__PAGE_TITLE__}}" />
+    <meta name="apple-mobile-web-app-title" content="Vooruit 100" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
-    <!-- 
-    Let spiders know this page is optimized for mobile
-    Set the viewport for IE Mobile
-    Enable smooth font rendering on IE Mobile
-    http://www.metatags.nl/mobiele_metatags_voor_de_smartphone
-    -->
 
     <meta name="HandheldFriendly" content="true" />
     <meta name="MobileOptimized" content="320" />
     <meta http-equiv="cleartype" content="on" />
-
-
-    <!-- G+ AND FACEBOOK /////////////////////////////////////////////////////////// -->
-
-    <!--
-    Added Facebook Share Button support
-    http://davidwalsh.name/facebook-meta-tags
-    http://ogp.me
-    -->
-
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="{{__SITE_NAME__}}" />
-    <meta property="og:title" content="{{__PAGE_TITLE__}}" />
-    <meta property="og:description" content="{{__PAGE_DESCRIPTION__}}" />
-    <meta property="og:url" content="{{__CANONICAL_PATH_TO_THIS_PAGE__}}" />
-    <meta property="og:image" content="http://www.{{__SITE_URL__}}/icons/200x200.jpg" />
-
-    <link rel="image_src" href="http://www.{{__SITE_URL__}}/icons/200x200.jpg" />
-
-
-    <!-- TWITTER CARDS ///////////////////////////////////////////////////////////// -->
-
-    <!--
-    Images for Twitter Cards should be min. 280px width, and min. 150px height, max. 1MB
-    https://dev.twitter.com/docs/cards
-    https://dev.twitter.com/docs/cards/validation/validator
-    -->
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="{{__@TWITTER_ACCOUNT__}}" />
-    <meta name="twitter:title" content="{{__PAGE_TITLE__}}" />
-    <meta name="twitter:description" content="{{__PAGE_DESCRIPTION__}}" />
-    <meta name="twitter:image:src" content="http://www.{{__SITE_URL__}}/icons/450x300.jpg" />
-    <meta name="twitter:image:width" content="450" />
-    <meta name="twitter:image:height" content="300" />
-    
 
     <!-- ICONS ///////////////////////////////////////////////////////////////////// -->
     
@@ -122,82 +40,35 @@
     <link rel="shortcut icon" href="icons/32x32.png" />
     <link rel="icon" href="icons/favicon.ico" />
 
-    <!-- 
-    Tile icon for Win8
-    Disable link highlighting upon tap in IE10
-    http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx
-    -->
-
-    <meta name="application-name" content="{{__PAGE_TITLE__}}" />
-    <meta name="msapplication-tooltip" content="{{__PAGE_DESCRIPTION__}}" />
-    <meta name="msapplication-TileImage" content="icons/144x144.png" />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    
-    
     <!-- TYPEKIT -->
     <script type="text/javascript" src="//use.typekit.net/ivn5grd.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- CSS /////////////////////////////////////////////////////////////////////// -->
 
-    <!--
-    Mobile First setup
-    http://www.html5rocks.com/en/mobile/mobifying
-    -->
-
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 768px)" />
 
-    <!--
-    CSS fixes for IE7 + IE8
-    Enable MediaQueries on IE7 + IE8 with respond.js
-    https://github.com/scottjehl/Respond
-    -->
-
-    <!--[if (lt IE 9) & (!IEMobile)]>
-        <link rel="stylesheet" href="css/ie.css" />
-        <script src="js/libs/respond.min.js"></script>
-    <![endif]-->
-
-
-    <!-- SILENT PRELOADING ///////////////////////////////////////////////////////// -->
-
-    <!--
-    Specify pages or assets you want to silently preload after this page has finished loading
-    http://daker.me/2013/05/5-html5-features-you-need-to-know.html
-    -->
-    <link rel="prefetch" href="{{__SOME_OTHER_PAGE_OR_IMAGE__}}" />
-
 </head>
 <body>
-
-    
-    <!--
-    Provide a no-javascript alert in case javascript is disabled
-    -->
-
-    <noscript>
-        
-        Om {{__SITE_NAME__}} te gebruiken dient u javascript in te schakelen. 
-        <a href="http://www.enable-javascript.com/nl/" target="_blank">Klik hier voor instructies</a> over hoe u javascript activeert in uw browser.
-
-    </noscript>
-
     <div id="background">
-        <canvas id="backgroundCanvas"></canvas>
     </div>
 
-    <div id="hiddenMessage"><h1>Creative<br />Coding</h1></div>
+    <div id="hiddenMessage"><h1>Creative<br />Coding<br />Playground</h1></div>
 
     <div id="message1" class="hidden">
         <div class="closeButton">
             <a id="close1" href="#">CLOSE</a>
         </div>
         <div class="textBox">
-            <h2>Workshop</h2>
+            <h2>Vooruit 100</h2>
 
-            <p>Alle info over de workshop hier...</p>
+            <p>Zet een bende creative coders bij elkaar en je krijgt een explosie van pixels en code. Na drie dagen actieve dagen kan het afgewerkte werk blijven staan in de expo Vooruit 100.</p>
+
+            <h3>Thema</h3>
+            
+            <p>Het getal 100. Op maandagavond zouden we een collectie van werkjes moeten hebben die allemaal synchroon optellen van 0 naar 100. Allemaal op hun eigen manier, visueel, audio, &hellip;</p>
+
         </div>
     </div>
 
@@ -208,11 +79,18 @@
         <div class="textBox">
             <h2>Waar &amp; Wanneer?</h2>
 
-            <p>31 augustus tot 2 september.</p>
+            <p>31 augustus, 1 &amp; 2 september.</p>
+
+            <p>In de prachtige theaterzaal van de <a href="http://vooruit.be/nl/information/detail/46/Wegbeschrijving">Vooruit</a> te Gent.</p>
+
 
             <p>Kunstencentrum Vooruit<br />
             Sint-Pietersnieuwstraat 23<br />
             9000 Gent, BE</p>
+
+
+            <p>Een bijdrage van 50 euro per persoon voor het middageten en drank.</p>
+
         </div>
     </div>
 
@@ -221,8 +99,8 @@
             <a id="close3" href="#">CLOSE</a>
         </div>
         <div class="textBox">
-            <h2>Inschrijven</h2>
-            <p>Informatie over inschrijven...</p>
+            <h2>Voor Wie?</h2>
+            <p>Max. 30 personen met goede basis kennis van programmeren. Gebruikte talen vari&euml;ren van Openframeworks, Processing, Cinder tot HTML5 Canvas, WebGL en Arduino.</p>
         </div>
     </div>
 
@@ -235,7 +113,7 @@
 
             <p>Website by <a href="http://twitter.com/gwenvanhee/">Gwen Vanhee</a> &amp; <a href="http://twitter.com/vormplus/">Jan Vantomme</a>.</p>
 
-            <p>All code for this website can be found on <a href="https://github.com/vormplus/vooruit-cc">GitHub</a>.</p>
+            <p>De code voor deze website kan je vinden op <a href="https://github.com/vormplus/vooruit-cc">GitHub</a>.</p>
         </div>
     </div>
 
@@ -244,34 +122,9 @@
     <div id="corner3"></div>
     <div id="corner4"></div>
 
-    <!-- ASYNC SETUP USING REQUIRE.JS ////////////////////////////////////////////// -->
-
-    <!--
-    Require.js needs a config-file + app-file (app-file is set in the config)
-    This setup follows a Mobile First approach, it let's you choose between different DOM libs
-    Default DOM manipulation is handled by Zepto.js (10kb) <-> jQuery.js (93kb) for IE
-    http://requirejs.org
-    -->
-
-    <script data-main="js/config-require.min" src="js/libs/require-2.1.6.min.js"></script>
-
-
-
-
-    <!-- GOOGLE ANALYTICS ////////////////////////////////////////////////////////// -->
-
-    <!--
-    Use the async code snippet - change UA-XXXXX-X to your site ID
-    https://developers.google.com/analytics/devguides/collection/gajs/?hl=nl
-    -->
-
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-        g.src='//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-
+    <script src="js/libs/jquery-1.10.0.min.js"></script>
+    <script src="js/libs/sketch.js"></script>
+    <script src="js/background.js"></script>
 
 </body>
 </html>
