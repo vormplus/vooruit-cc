@@ -203,7 +203,8 @@ a:active {
 }
 
 .textBox {
-	margin: 60px;
+	margin: 20px;
+	overflow-y: scroll;
 }
 
 #hiddenMessage {
@@ -254,6 +255,10 @@ a:active {
 	display: none;
 }
 
+.closeButton {
+	overflow: auto;
+}
+
 #close1,
 #close2,
 #close3,
@@ -261,7 +266,7 @@ a:active {
 	float: right;
 	width: 60px;
 	height: 60px;
-	margin: 60px;
+	margin: 20px 20px 0 20px;
 	display: block;
 	text-indent: -9999px;
 }

@@ -11,3 +11,9 @@ h2 {
   font-family: "cabazon", helvetica, sans-serif;
   font-size: 6em;
   line-height: 1em; }
+
+/* line 71, sources/desktop.scss */
+.textBox {
+  margin: 60px;
+  overflow-y: auto;
+  max-width: 600px; }
