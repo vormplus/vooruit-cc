@@ -1,19 +1,25 @@
 @charset "utf-8";
 /* line 50, sources/desktop.scss */
 h1 {
-  font-family: "cabazon", helvetica, sans-serif;
   font-size: 10em;
   line-height: 1em;
   color: rgba(255, 255, 255, 0.4); }
 
-/* line 57, sources/desktop.scss */
+/* line 56, sources/desktop.scss */
 h2 {
-  font-family: "cabazon", helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 4em;
   line-height: 1em; }
 
-/* line 71, sources/desktop.scss */
+/* line 68, sources/desktop.scss */
 .textBox {
   margin: 60px;
   overflow-y: auto;
-  max-width: 600px; }
+  /*	max-width: 600px; */ }
+
+/* line 74, sources/desktop.scss */
+#message1 {
+  width: 50%; }
+
+/* line 78, sources/desktop.scss */
+#message2 {
+  width: 50%; }

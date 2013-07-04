@@ -178,109 +178,105 @@ h1 {
   font-size: 10em;
   line-height: 1em;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.4); }
+  color: rgba(255, 255, 255, 0.8); }
 
 /* line 162, sources/mobile.scss */
 h2 {
-  font-family: "cabazon", helvetica, sans-serif;
+  font-family: "runda", helvetica, sans-serif;
   font-size: 4em;
   font-weight: normal;
   line-height: 1em;
   margin-bottom: 0.5em; }
 
 /* line 170, sources/mobile.scss */
+h3 {
+  font-family: "runda", helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1em;
+  margin-bottom: 0.5em; }
+
+/* line 178, sources/mobile.scss */
 p {
   margin-bottom: 1.4em; }
 
-/* line 175, sources/mobile.scss */
+/* line 183, sources/mobile.scss */
 a:hover,
 a:active {
   text-decoration: none; }
 
-/* line 179, sources/mobile.scss */
+/* line 187, sources/mobile.scss */
 #background {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
-/* line 185, sources/mobile.scss */
+/* line 193, sources/mobile.scss */
 #background .sketch {
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: white; }
 
-/* line 196, sources/mobile.scss */
-#hiddenMessage,
-#message1,
-#message2,
-#message3,
-#message4 {
+/* line 200, sources/mobile.scss */
+#message1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+  background: rgba(247, 232, 34, 0.9);
+  color: #009bdb;
+  border-right: 4px dotted #009bdb; }
+
+/* line 212, sources/mobile.scss */
+#message2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+  background: rgba(228, 35, 33, 0.9);
+  color: white;
+  border-left: 4px dotted white; }
+
+/* line 224, sources/mobile.scss */
+.textBox {
+  margin: 20px;
+  overflow-y: scroll; }
+
+/* line 229, sources/mobile.scss */
+#hiddenMessage {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 20; }
-
-/* line 205, sources/mobile.scss */
-.textBox {
-  margin: 20px;
-  overflow-y: scroll; }
-
-/* line 210, sources/mobile.scss */
-#hiddenMessage {
-  z-index: 5;
+  z-index: 20;
   background: transparent;
   text-align: center;
   overflow: hidden;
   pointer-events: none; }
 
-/* line 218, sources/mobile.scss */
-#message1 {
-  background: white;
-  color: #e42321; }
-
-/* line 223, sources/mobile.scss */
+/* line 242, sources/mobile.scss */
 #message1 a {
-  color: #e42321; }
-
-/* line 227, sources/mobile.scss */
-#message2 {
-  background: #f7e822;
   color: #009bdb; }
 
-/* line 232, sources/mobile.scss */
+/* line 246, sources/mobile.scss */
 #message2 a {
-  color: #009bdb; }
-
-/* line 236, sources/mobile.scss */
-#message3 {
-  background: #009bdb;
-  color: black; }
-
-/* line 241, sources/mobile.scss */
-#message3 a {
-  color: black; }
-
-/* line 245, sources/mobile.scss */
-#message4 {
-  background: #e42321;
   color: white; }
 
 /* line 250, sources/mobile.scss */
-#message4 a {
-  color: white; }
-
-/* line 254, sources/mobile.scss */
 .hidden {
   display: none; }
 
-/* line 258, sources/mobile.scss */
+/* line 254, sources/mobile.scss */
 .closeButton {
   overflow: auto; }
 
-/* line 265, sources/mobile.scss */
+/* line 261, sources/mobile.scss */
 #close1,
 #close2,
 #close3,
@@ -292,27 +288,17 @@ a:active {
   display: block;
   text-indent: -9999px; }
 
-/* line 274, sources/mobile.scss */
+/* line 270, sources/mobile.scss */
 #message1 #close1 {
-  background: transparent url("../images/close-red.png") no-repeat;
-  color: #e42321; }
-
-/* line 279, sources/mobile.scss */
-#message2 #close2 {
-  background: transparent url("../images/close-blue.png") no-repeat;
+  background: #f7e822 url("../images/close-blue.png") no-repeat;
   color: #009bdb; }
 
-/* line 284, sources/mobile.scss */
-#message3 #close3 {
-  background: transparent url("../images/close-black.png") no-repeat;
-  color: black; }
-
-/* line 289, sources/mobile.scss */
-#message4 #close4 {
+/* line 275, sources/mobile.scss */
+#message2 #close2 {
   background: transparent url("../images/close-white.png") no-repeat;
   color: white; }
 
-/* line 297, sources/mobile.scss */
+/* line 283, sources/mobile.scss */
 #corner1,
 #corner2,
 #corner3,
@@ -320,28 +306,18 @@ a:active {
   position: absolute;
   z-index: 10;
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  background-color: white;
+  background-repeat: no-repeat; }
 
-/* line 304, sources/mobile.scss */
+/* line 292, sources/mobile.scss */
 #corner1 {
   top: 0;
   left: 0;
-  background: transparent url("../images/circle.png") no-repeat; }
+  background-image: url("../images/circle.png"); }
 
-/* line 310, sources/mobile.scss */
+/* line 298, sources/mobile.scss */
 #corner2 {
   top: 0;
   right: 0;
-  background: transparent url("../images/square.png") no-repeat; }
-
-/* line 316, sources/mobile.scss */
-#corner3 {
-  bottom: 0;
-  left: 0;
-  background: transparent url("../images/triangle.png") no-repeat; }
-
-/* line 322, sources/mobile.scss */
-#corner4 {
-  bottom: 0;
-  right: 0;
-  background: transparent url("../images/questionmark.png") no-repeat; }
+  background-image: url("../images/questionmark.png"); }

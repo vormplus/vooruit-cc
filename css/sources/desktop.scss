@@ -48,15 +48,13 @@ html {
 }
 
 h1 {
-	font-family: "cabazon", helvetica, sans-serif;
 	font-size: 10em;
 	line-height: 1em;
 	color: rgba( 255, 255, 255, 0.4 );
 }
 
 h2 {
-	font-family: "cabazon", helvetica, sans-serif;
-	font-size: 6em;
+	font-size: 4em;
 	line-height: 1em;
 }
 
@@ -67,14 +65,19 @@ h2 {
 		
 }
 
-
 .textBox {
 	margin: 60px;
 	overflow-y: auto;
-	max-width: 600px;
+/*	max-width: 600px; */
 }
 
+#message1 {
+	width: 50%;
+}
 
+#message2 {
+	width: 50%;
+}
 
 
 

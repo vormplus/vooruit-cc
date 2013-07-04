@@ -156,12 +156,20 @@ h1 {
 	font-size: 10em;
 	line-height: 1em;
 	font-weight: normal;
-	color: rgba( 255, 255, 255, 0.4 );
+	color: rgba( 255, 255, 255, 0.8 );
 }
 
 h2 {
-	font-family: "cabazon", helvetica, sans-serif;
+	font-family: "runda", helvetica, sans-serif;
 	font-size: 4em;
+	font-weight: normal;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-family: "runda", helvetica, sans-serif;
+	font-size: 1.5em;
 	font-weight: normal;
 	line-height: 1em;
 	margin-bottom: 0.5em;
@@ -189,17 +197,28 @@ a:active {
 	background: $white;
 }
 
-#hiddenMessage,
-#message1,
-#message2,
-#message3,
-#message4 {
+#message1 {
 	position: absolute;
-	left: 0;
 	top: 0;
+	left: 0;
 	bottom: 0;
-	right: 0;
+	width: 100%;
 	z-index: 20;
+	background: $yellowtransparent;
+	color: $blue;
+	border-right: 4px dotted $blue;	
+}
+
+#message2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 20;
+	background: $redtransparent;
+	color: $white;	
+	border-left: 4px dotted $white;	
 }
 
 .textBox {
@@ -208,46 +227,23 @@ a:active {
 }
 
 #hiddenMessage {
-	z-index: 5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 20;
 	background: transparent;
 	text-align: center;
 	overflow: hidden;
 	pointer-events: none;
 }
 
-#message1 {
-	background: $white;
-	color: $red;
-}
-
 #message1 a {
-	color: $red;
-}
-
-#message2 {
-	background: $yellow;
-	color: $blue;	
-}
-
-#message2 a {
 	color: $blue;
 }
 
-#message3 {
-	background: $blue;
-	color: $black;	
-}
-
-#message3 a {
-	color: $black;
-}
-
-#message4 {
-	background: $red;
-	color: $white;	
-}
-
-#message4 a {
+#message2 a {
 	color: $white;
 }
 
@@ -272,21 +268,11 @@ a:active {
 }
 
 #message1 #close1 {
-	background: transparent url("../images/close-red.png") no-repeat;
-	color: $red;
-}
-
-#message2 #close2 {
-	background: transparent url("../images/close-blue.png") no-repeat;
+	background: $yellow url("../images/close-blue.png") no-repeat;
 	color: $blue;
 }
 
-#message3 #close3 {
-	background: transparent url("../images/close-black.png") no-repeat;
-	color: $black;
-}
-
-#message4 #close4 {
+#message2 #close2 {
 	background: transparent url("../images/close-white.png") no-repeat;
 	color: $white;
 }
@@ -299,32 +285,21 @@ a:active {
 	z-index: 10;
 	width: 60px;
 	height: 60px;
+	background-color: $white;
+	background-repeat: no-repeat;
 }
 
 #corner1 {
 	top: 0;
 	left: 0;
-	background: transparent url("../images/circle.png") no-repeat;
+	background-image: url("../images/circle.png");
 }
 
 #corner2 {
 	top: 0;
 	right: 0;
-	background: transparent url("../images/square.png") no-repeat;
+	background-image: url("../images/questionmark.png");
 }
-
-#corner3 {
-	bottom: 0;
-	left: 0;
-	background: transparent url("../images/triangle.png") no-repeat;
-}
-
-#corner4 {
-	bottom: 0;
-	right: 0;
-	background: transparent url("../images/questionmark.png") no-repeat;
-}
-
 
 
 //
