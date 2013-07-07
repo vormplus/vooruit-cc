@@ -1,0 +1,261 @@
+//
+// CSS IMPORTS -----------------------------------------------------------------------
+//
+
+@charset "utf-8";
+@import "compass/css3";
+@import "__reset";
+@import "__css3-animations";
+
+
+// MEDIA QUERIES
+$tablet  : 768px;
+$desktop : 1025px;
+
+
+// COLORS
+$blue               : #009BDB;
+$yellow             : #F7E822;
+$red                : #E42321;
+$white              : #FFF;
+$yellow-transparent : rgba(247, 232, 34, 0.95);
+$red-transparent    : rgba(228, 35, 33, 0.95);
+
+
+
+
+
+
+
+
+//
+// GENERAL ---------------------------------------------------------------------------
+//
+//
+
+html {
+	overflow: hidden;
+	background: #FFF;
+}
+
+body {
+	font-family: Helvetica, sans-serif;	
+	font-size: 16px;
+}
+
+h1, h2 {
+	font-size: 3em;
+	font-weight: lighter;
+	line-height: 1em;
+	margin: 0.5em 0;
+}
+
+h3 {
+	font-size: 1.4em;
+	line-height: 1em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-bottom: 1.4em;
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+//
+// BACKGROUND ------------------------------------------------------------------------
+//
+
+#background {
+	position: fixed;
+}
+
+#overlay {
+	width: 70%;
+	left: 15%;
+	top: 0;
+	padding: 60px 0;
+	position: fixed;
+
+	opacity: 0.95;
+	pointer-events: none;
+}
+
+
+
+
+
+
+
+
+//
+// NAVIGATION ------------------------------------------------------------------------
+//
+
+.button {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	//background-image: url("../img/buttons.png");
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAMAAAAJixmgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQ0RDRUU3OURGNjYxMUUyQkIyQThCNDNCRDM4MDQ4MiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQ0RDRUU3QURGNjYxMUUyQkIyQThCNDNCRDM4MDQ4MiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBDRENFRTc3REY2NjExRTJCQjJBOEI0M0JEMzgwNDgyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBDRENFRTc4REY2NjExRTJCQjJBOEI0M0JEMzgwNDgyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+K/w0SgAAASxQTFRFAAAAAAAA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);
+	background-size: 121px 121px;
+
+	-webkit-touch-callout: none;
+	@include css3Animation(all, 300ms, cubic-bezier(.445, .045, .0355, 1));
+}
+
+.panel .button {
+	right: 20px;
+	top: 20px;
+}
+
+#left-button { left: 0; }
+#right-button { background-position: 60px 0; }
+#left-panel .button { background-position: 0 60px; }
+#right-panel .button { background-position: 60px 60px; }
+
+
+// hide buttons when panels are shown
+#left-button.hidden {
+	@include experimental("transform", translate3d(-60px, 0, 0));
+}
+
+#right-button.hidden {
+	@include experimental("transform", translate3d(60px, 0, 0));
+	width: 0;
+}
+
+
+
+
+
+
+
+
+//
+// CONTENT VIEWS ---------------------------------------------------------------------
+//
+
+.panel {
+	color: #FFF;
+	position: absolute;
+	height: 100%;
+	top: 0;
+
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	@include css3Animation(all, 300ms, cubic-bezier(.445, .045, .0355, 1));
+
+	// fix overflow issue when
+	// select & dragging the left-panel
+	// + add quickfix for Opera < 15 (no translate3d support)
+	width: 0;
+}
+
+#left-panel {
+	color: $blue;
+	@include experimental("transform", translate3d(-100%, 0, 0));
+	background: $yellow-transparent;
+	left: 0;
+}
+
+#right-panel {
+	@include experimental("transform", translate3d(100%, 0, 0));
+	background: $red-transparent;
+	right: 0;
+}
+
+#left-panel.active,
+#right-panel.active {
+	@include experimental("transform", translate3d(0, 0, 0));
+	width: 100%;
+}
+
+.inner {
+	width: 80%;
+	margin: 40px 10%;
+}
+
+#left-panel a { color: $red; }
+#right-panel a { color: $yellow; }
+
+.button-inschrijven {
+	padding: 20px 0;
+}
+.button-inschrijven a {
+	background: $blue;
+	color: $white !important;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+}
+#right-panel .button-inschrijven a {
+	background: $white;
+	color: $red !important;
+}
+
+
+
+
+
+
+
+
+//
+// TABLET PORTRAIT -------------------------------------------------------------------
+//
+
+@media screen and (min-width: $tablet) {
+
+	#left-panel.active,
+	#right-panel.active {
+		width: 50%;
+	}
+
+	#left-panel { border-right: 4px dotted $blue; }
+	#right-panel { border-left: 4px dotted $white; }
+
+}
+
+
+
+
+
+
+
+
+//
+// DESKTOP ---------------------------------------------------------------------------
+//
+
+@media screen and (min-width: $desktop) {
+
+	#overlay {
+		width: 720px;
+		margin-left: -360px;
+		left: 50%;
+	}
+
+}
+
+
+
+
+
+
+
