@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-    <link rel="dns-prefetch" href="//www.google-analytics.com" />
     <title>Vooruit 100 | Creative Coding Playground</title>
 
-    <meta name="description" content="Zet een bende creative coders bij elkaar en je krijgt een explosie van pixels en code. Na drie dagen actieve dagen kan het afgewerkte werk blijven staan in de expo Vooruit 100." />
-
+    <meta name="description" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta name="keywords" content="{{__PAGE_KEYWORDS__}}" />
     <link rel="canonical" href="/" />
 
-    <meta name="robots" content="noodp, noydir" />
     <meta name="google" content="notranslate" />
-
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" />
-    <meta name="format-detection" content="telephone=no" />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Vooruit 100" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
     <meta name="HandheldFriendly" content="true" />
     <meta name="MobileOptimized" content="320" />
     <meta http-equiv="cleartype" content="on" />
-
-    <!-- ICONS ///////////////////////////////////////////////////////////////////// -->
-    
-    <!--
-    Favicon generator: http://favicon.htmlkit.com/favicon
-    http://www.netmagazine.com/features/create-perfect-favicon
-    -->
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png" />
@@ -40,72 +24,109 @@
     <link rel="shortcut icon" href="icons/32x32.png" />
     <link rel="icon" href="icons/favicon.ico" />
 
-    <!-- TYPEKIT -->
-    <script type="text/javascript" src="//use.typekit.net/ivn5grd.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vooruit 100 | Creative Coding Playground" />
+    <meta property="og:title" content="Vooruit 100 | Creative Coding Playground" />
+    <meta property="og:description" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta property="og:url" content="{{__CANONICAL_PATH_TO_THIS_PAGE__}}" />
+    <meta property="og:image" content="http://www.{{__SITE_URL__}}/icons/200x200.jpg" />
+    <link rel="image_src" href="http://www.{{__SITE_URL__}}/icons/200x200.jpg" />
 
-    <!-- CSS /////////////////////////////////////////////////////////////////////// -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="{{__@TWITTER_ACCOUNT__}}" />
+    <meta name="twitter:title" content="Vooruit 100 | Creative Coding Playground" />
+    <meta name="twitter:description" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta name="twitter:image:src" content="http://www.{{__SITE_URL__}}/icons/450x300.jpg" />
+    <meta name="twitter:image:width" content="450" />
+    <meta name="twitter:image:height" content="300" />
 
-    <link rel="stylesheet" href="css/mobile.css" />
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 768px)" />
+    <meta name="application-name" content="Vooruit 100 | Creative Coding Playground" />
+    <meta name="msapplication-tooltip" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta name="msapplication-TileImage" content="icons/144x144.png" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="stylesheet" href="css/styles.css" />
 
 </head>
 <body>
-    <div id="background">
-    </div>
 
-    <div id="hiddenMessage"><h1>Creative<br />Coding<br />Playground</h1></div>
+    <div id="background"></div>
+    <img id="overlay" src="img/overlay.png" alt="Voorui 100 | Creative Coding Playground" />
 
-    <div id="message1">
-        <div class="closeButton">
-            <a id="close1" href="#">CLOSE</a>
-        </div>
-        <div class="textBox">
-            <h2>Vooruit 100, Creative Coding Playground</h2>
+    <a href="#" id="left-button" class="button"></a>
+    <a href="#" id="right-button" class="button"></a>
 
-            <p>Zet een bende creative coders bij elkaar en je krijgt een explosie van pixels en code. Na drie dagen actieve dagen kan het afgewerkte werk blijven staan in de expo Vooruit 100.</p>
+    <div id="left-panel" class="panel">
+
+        <a href="#" id="close-left" class="button"></a>
+        <div class="inner">
+        
+            <h1>
+                <strong>Vooruit 100</strong><br />
+                Creative Coding<br />
+                Playground
+            </h1>
+            <p>
+                Zet een bende <strong>creative coders</strong> bij elkaar en je krijgt een explosie van pixels! Gedurende 3 dagen gaan 30 coders aan de slag in het <strong>Kunstencentrum Vooruit</strong>. Het resultaat zal te zien in een expositie over het <strong>100-jarig bestaan van Vooruit</strong>.
+            </p>
+            <p class="button-inschrijven">
+                <a href="#" target="_blank">Schrijf je hier in!</a>
+            </p>
 
             <h3>Thema</h3>
-            
-            <p>Het getal 100. Op maandagavond zouden we een collectie van werkjes moeten hebben die allemaal synchroon optellen van 0 naar 100. Allemaal op hun eigen manier, visueel, audio, &hellip;</p>
+            <p>
+                Centraal thema is <strong>het getal 100</strong>. Bedoeling is dat we op het einde van de workshop een collectie werken hebben die synchroon optellen van 0 naar 100. Elk op hun eigen unieke manier: digitaal, analoog visueel, auditief, ...
+            </p>
 
-            <h3>Waar &amp; Wanneer?</h3>
+            <h3>Waar & wanneer?</h3>
+            <p>
+                Zaterdag 31 augustus, zondag 1 en maandag 2 september 2013 in de prachtige <a href="http://vooruit.be/nl/information/detail/46/Wegbeschrijving" target="_blank">theaterzaal van de Vooruit</a> te Gent. Deelname bedraagt <strong>50,00 euro/persoon</strong>, middagmaal & drank inbegrepen.
+            </p>
 
-            <p>31 augustus, 1 &amp; 2 september.</p>
+            <p>
+                <strong>Kunstencentrum Vooruit</strong><br />
+                Sint-Pietersnieuwstraat 23<br />
+                9000 Gent, BE<br />
+                <a href="http://vooruit100.be/" target="_blank">www.vooruit100.be</a>
+            </p>
 
-            <p>In de prachtige theaterzaal van de <a href="http://vooruit.be/nl/information/detail/46/Wegbeschrijving">Vooruit</a> te Gent.</p>
+            <h3>Voor wie</h3>
+            <p>
+                Iedereen met een goede (basis)kennis programmeren. Van openFrameworks, Processing & Cinder tot HTML5, Canvas, WebGL en Arduino, alles kan! Het aantal deelnemers is echter <strong>beperkt tot 30 personen</strong>, <a href="#" target="_blank">schrijf je dus snel in</a>
+            </p>
 
-            <p><strong>Kunstencentrum Vooruit</strong><br />
-            Sint-Pietersnieuwstraat 23<br />
-            9000 Gent, BE</p>
-
-            <p>Een bijdrage van 50 euro per persoon voor het middageten en drank.</p>
-
-            <h3>Voor Wie?</h3>
-            <p>Max. 30 personen met goede basis kennis van programmeren. Gebruikte talen vari&euml;ren van Openframeworks, Processing, Cinder tot HTML5 Canvas, WebGL en Arduino.</p>
+            <p class="button-inschrijven">
+                <a href="https://twitter.com/intent/tweet?text=__TWEET_GOES_HERE__+-+__URL_GOES_HERE__&hashtags=__HASHTAGS_GO_HERE__" target="_blank">Share!</a>
+            </p>
 
         </div>
+
+    </div>
+    <div id="right-panel" class="panel">
+
+        <a href="#" id="close-right" class="button"></a>
+        <div class="inner">
+
+            <h2>Credits & Source</h2>
+            <p>
+                Dit initiatief is mogelijk gemaakt door <a href="http://www.lab101.be/" target="_blank">Kris Meeusen</a> in samenwerking met <a href="http://vooruit100.be/" target="_blank">Vooruit 100</a>. Website door <a href="http://twitter.com/vormplus/" target="_blank">Jan Vantomme</a> & <a href="http://twitter.com/gwenvanhee/" target="_blank">Gwen Vanhee</a>
+            </p>
+
+            <p>
+                Gemaakt met CodeKit, Sketch.js & some ♥♥♥<br />
+                De source is terug te vinden op <a href="https://github.com/vormplus/vooruit-cc">GitHub</a>
+            </p>
+
+            <p class="button-inschrijven">
+                <a href="https://twitter.com/intent/tweet?text=__TWEET_GOES_HERE__+-+__URL_GOES_HERE__&hashtags=__HASHTAGS_GO_HERE__" target="_blank">Share!</a>
+            </p>
+
+        </div>
+
     </div>
 
-    <div id="message2" class="hidden">
-        <div class="closeButton">
-            <a id="close2" href="#">CLOSE</a>
-        </div>
-        <div class="textBox">
-            <h2>Source Code</h2>
-
-            <p>Website by <a href="http://twitter.com/gwenvanhee/">Gwen Vanhee</a> &amp; <a href="http://twitter.com/vormplus/">Jan Vantomme</a>.</p>
-
-            <p>De code voor deze website kan je vinden op <a href="https://github.com/vormplus/vooruit-cc">GitHub</a>.</p>
-        </div>
-    </div>
-
-    <div id="corner1" class="hidden"></div>
-    <div id="corner2" class="hidden"></div>
-
-    <script src="js/libs/jquery-1.10.0.min.js"></script>
-    <script src="js/libs/sketch.js"></script>
-    <script src="js/background.js"></script>
+    <script src="js/app.min.js"></script>
 
 </body>
 </html>
