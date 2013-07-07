@@ -4,11 +4,11 @@
 http_path = "/"
 css_dir = "css"
 sass_dir = "css/sources"
-images_dir = "images"
+images_dir = "img"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 
-output_style = :nested
+output_style = :compressed
 
 relative_assets = true
 
